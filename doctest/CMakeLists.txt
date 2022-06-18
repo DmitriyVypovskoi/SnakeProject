@@ -7,4 +7,3 @@ target_include_directories(doctest PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOUR
 set_target_properties(doctest PROPERTIES CXX_STANDARD 11 CXX_STANDARD_REQUIRED ON)
 
 add_library(doctest::doctest ALIAS doctest)
-add_library(Catch2::Catch2 ALIAS doctest)
