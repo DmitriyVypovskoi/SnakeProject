@@ -10,15 +10,16 @@ find_package(SFML 2.5 REQUIRED graphics network audio window system)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
 
-add_executable(snakeproject WIN32 "Snake.cpp")
-target_link_libraries(snakeproject PUBLIC default sfml-audio sfml-graphics sfml-window sfml-system)
+add_executable(snake WIN32 Snake.cpp)
+target_link_libraries(snake PUBLIC default sfml-audio sfml-graphics sfml-window sfml-system)
 
 
 enable_testing()
 add_subdirectory(doctest)
 
-add_executable(snakeproject_snake_test test.cpp)
+add_executable(snakeproject_snake_test snake_test/test.cpp)
 target_link_libraries(snakeproject_snake_test PUBLIC doctest sfml-audio sfml-graphics sfml-window sfml-system)
 
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/openal32.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/resources DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
 

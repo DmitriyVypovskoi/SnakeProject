@@ -1,11 +1,11 @@
 # ninja log v5
 616	1572	6772583485811282	snakeproject_test.exe	395acd68eb56a6fb
-1	327	6772585718203617	build.ninja	d5d18c4cdfb3c193
+1	325	6772630037627749	build.ninja	d5d18c4cdfb3c193
 4	1200	6772076065496318	CMakeFiles/snakeproject.dir/main.cpp.obj	4fa728f76e35a2c9
-1335	2399	6772583494085567	snakeproject.exe	569bc66f1f838a45
+1412	2545	6772610916806062	snakeproject.exe	569bc66f1f838a45
 27	1015	6771865548114688	CMakeFiles/snakeproject.dir/snake_test.cpp.obj	bb9767f6942639c
+4	1411	6772610905560274	CMakeFiles/snakeproject.dir/Snake.cpp.obj	415a2cb83d313c1b
 5	840	6772557966569467	CMakeFiles/snakeproject.dir/Source.cpp.obj	1a4d3529b97979c0
-4	1334	6772583483517787	CMakeFiles/snakeproject.dir/Snake.cpp.obj	415a2cb83d313c1b
 2351	2709	6772456875116745	external/doctest/libdoctest.a	9e004fa6d4e27af
 4	2349	6772456871466978	external/doctest/CMakeFiles/doctest.dir/doctest.cpp.obj	ce7c5276236a5f20
 4	869	6772431808964737	CMakeFiles/snakeproject.dir/test/Source.cpp.obj	db0d81146d975e16
@@ -13,3 +13,9 @@
 3	3107	6772538669398895	doctest/CMakeFiles/doctest.dir/doctest.cpp.obj	62fabb6872503c01
 3107	3480	6772538673158521	doctest/libdoctest.a	d652b5c1dba9c541
 21	615	6772583476335971	CMakeFiles/snakeproject_test.dir/Source.cpp.obj	dcba6dd4a90242e7
+31	843	6772610899885427	CMakeFiles/snakeproject_snake_test.dir/snake_test/test.cpp.obj	657f68eac94cdf9f
+844	1824	6772610909639553	snakeproject_snake_test.exe	356dcd2b55ca5faa
+0	1356	6772630149083054	CMakeFiles/snake.dir/Snake.cpp.obj	a43038cdc6cb0643
+1357	2538	6772630160802087	snake.exe	38a584ff5aa7f19f
+5	1810	6772630796595702	CMakeFiles/snake.dir/Snake.cpp.obj	a43038cdc6cb0643
+1811	3305	6772630811446637	snake.exe	38a584ff5aa7f19f

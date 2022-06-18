@@ -69,45 +69,45 @@ auto init_game()
 {
     std::srand(time(NULL));
 
-    snake_picture.loadFromFile("images/snake.png");
+    snake_picture.loadFromFile("resources/images/snake.png");
     snake.setTexture(snake_picture);
 
-    none_picture.loadFromFile("images/none.png");
+    none_picture.loadFromFile("resources/images/none.png");
     none.setTexture(none_picture);
 
-    apple_picture.loadFromFile("images/apple.png");
+    apple_picture.loadFromFile("resources/images/apple.png");
     apple.setTexture(apple_picture);
 
-    wall_picture.loadFromFile("images/wall.png");
+    wall_picture.loadFromFile("resources/images/wall.png");
     wall.setTexture(wall_picture);
 
-    snake_head_picture.loadFromFile("images/head.png");
+    snake_head_picture.loadFromFile("resources/images/head.png");
     snake_head.setTexture(snake_head_picture);
 
-    sb_ate_apple.loadFromFile("sounds/get_apple2.wav");
+    sb_ate_apple.loadFromFile("resources/sounds/get_apple2.wav");
     sound_ate_apple.setBuffer(sb_ate_apple);
     sound_ate_apple.setVolume(40);
 
-    sb_snake_kill_yourself.loadFromFile("sounds/died.wav");
+    sb_snake_kill_yourself.loadFromFile("resources/sounds/died.wav");
     sound_snake_kill_yourself.setBuffer(sb_snake_kill_yourself);
     sound_snake_kill_yourself.setVolume(50);
 
-    sb_snake_dead_from_wall.loadFromFile("sounds/dead.wav");
+    sb_snake_dead_from_wall.loadFromFile("resources/sounds/dead.wav");
     sound_snake_dead_from_wall.setBuffer(sb_snake_dead_from_wall);
     sound_snake_dead_from_wall.setVolume(70);
 
-    sb_pause_game.loadFromFile("sounds/pause_game.wav");
+    sb_pause_game.loadFromFile("resources/sounds/pause_game.wav");
     sound_pause_game.setBuffer(sb_pause_game);
     sound_pause_game.setVolume(20);
 
-    sb_score10.loadFromFile("sounds/score10.wav");
+    sb_score10.loadFromFile("resources/sounds/score10.wav");
     sound_score10.setBuffer(sb_score10);
     sound_score10.setVolume(45);
 
-    font_score.loadFromFile("fonts/BigFat.otf");
+    font_score.loadFromFile("resources/fonts/BigFat.otf");
     text_score.setFont(font_score);
 
-    font_game_over.loadFromFile("fonts/BigOld.ttf");
+    font_game_over.loadFromFile("resources/fonts/BigOld.ttf");
     text_game_over.setFont(font_game_over);
 
     text_game_over.setString("GAME OVER");
@@ -382,7 +382,7 @@ auto game()
                     switch (event.key.code) {                                                                                      /* Взаимствование */
                         case sf::Keyboard::Up:
                             if (snake_direction_last != snake_direction_down) {
-                                if (snake_direction_buffer.size() < 2) {
+                                if (snake_direction_buffer.size() <= 2) {
                                     snake_direction_buffer.insert(snake_direction_buffer.begin(), snake_direction_up);
                                 }
                             }

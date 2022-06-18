@@ -1,14 +1,5 @@
 "C:\Program Files\JetBrains\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.1.2/bin/ninja/win/ninja.exe" "-DSFML_DIR=C:\SFML\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.5.1\lib\cmake\SFML" -G Ninja -S C:\Users\dvypo\CLionProjects\snakeproject -B C:\Users\dvypo\CLionProjects\snakeproject\cmake-build-debug
 -- Found SFML 2.5.1 in C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/cmake/SFML
 -- Configuring done
-CMake Error at CMakeLists.txt:20 (add_executable):
-  Cannot find source file:
-
-    test.cpp
-
-
-CMake Error at CMakeLists.txt:20 (add_executable):
-  No SOURCES given to target: snakeproject_snake_test
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug

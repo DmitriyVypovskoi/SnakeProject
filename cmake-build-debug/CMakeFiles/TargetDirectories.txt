@@ -1,5 +1,5 @@
-C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/CMakeFiles/snakeproject.dir
-C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/CMakeFiles/snakeproject_test.dir
+C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/CMakeFiles/snake.dir
+C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/CMakeFiles/snakeproject_snake_test.dir
 C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/CMakeFiles/test.dir
 C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
