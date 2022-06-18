@@ -187,10 +187,10 @@ auto clear_field()
 
 /**
  * Method draw_field - draw cell in the window
+ * sf::Color - sets the text color
+ * snake_head.getLocalBounds() - retrieves text dimensions height or width
+ * std::to_string - turns a value into a string
  * @param window a window a render on
- * Method sf::Color
- * Method
- * Method std::to_string turns a value into a string
  */
 
 auto draw_field(sf::RenderWindow& window)
@@ -273,7 +273,9 @@ auto increaseSnake()
 
 /**
  * Method movement - responsible for the movement of the snake
- *
+ * Passage through the wall is carried out using: Passage through the wall is carried out by:
+ * zeroing the coordinates or setting the largest coordinate.
+ * sound_ate_apple.play - plays sound when eating an apple.
  */
 auto movement() {
     switch (snake_direction) {
@@ -339,8 +341,8 @@ auto movement() {
 }
 
 /**
+ * std::vector<int> -
  *
- * @return
  */
 auto game()
 {
@@ -376,8 +378,8 @@ auto game()
 
                 }
                 else {
-                    int snake_direction_last = snake_direction_buffer.empty() ? snake_direction : snake_direction_buffer.at(0);
-                    switch (event.key.code) {
+                    int snake_direction_last = snake_direction_buffer.empty() ? snake_direction : snake_direction_buffer.at(0); /* Взаимствование */
+                    switch (event.key.code) {                                                                                      /* Взаимствование */
                         case sf::Keyboard::Up:
                             if (snake_direction_last != snake_direction_down) {
                                 if (snake_direction_buffer.size() < 2) {
@@ -445,7 +447,7 @@ auto game()
                             break;
                     }
                     if (!snake_direction_buffer.empty()) {
-                        snake_direction = snake_direction_buffer.back(); // Возвращает последний элемент вектора //
+                        snake_direction = snake_direction_buffer.back(); /* Возвращает последний элемент вектора */
                         snake_direction_buffer.pop_back();
 
                     }

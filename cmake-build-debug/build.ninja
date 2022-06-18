@@ -47,13 +47,13 @@ cmake_ninja_workdir = C$:/Users/dvypo/CLionProjects/snakeproject/cmake-build-deb
 #############################################
 # Order-only phony target for snakeproject
 
-build cmake_object_order_depends_target_snakeproject: phony || cmake_object_order_depends_target_doctest
+build cmake_object_order_depends_target_snakeproject: phony || CMakeFiles/snakeproject.dir
 
-build CMakeFiles/snakeproject.dir/Source.cpp.obj: CXX_COMPILER__snakeproject_Debug C$:/Users/dvypo/CLionProjects/snakeproject/Source.cpp || cmake_object_order_depends_target_snakeproject
+build CMakeFiles/snakeproject.dir/Snake.cpp.obj: CXX_COMPILER__snakeproject_Debug C$:/Users/dvypo/CLionProjects/snakeproject/Snake.cpp || cmake_object_order_depends_target_snakeproject
   DEFINES = -DSFML_STATIC
-  DEP_FILE = CMakeFiles\snakeproject.dir\Source.cpp.obj.d
+  DEP_FILE = CMakeFiles\snakeproject.dir\Snake.cpp.obj.d
   FLAGS = -static -g -std=gnu++20
-  INCLUDES = -IC:/Users/dvypo/CLionProjects/snakeproject/doctest -isystem "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/include"
+  INCLUDES = -isystem "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/include"
   OBJECT_DIR = CMakeFiles\snakeproject.dir
   OBJECT_FILE_DIR = CMakeFiles\snakeproject.dir
 
@@ -65,16 +65,51 @@ build CMakeFiles/snakeproject.dir/Source.cpp.obj: CXX_COMPILER__snakeproject_Deb
 #############################################
 # Link the executable snakeproject.exe
 
-build snakeproject.exe: CXX_EXECUTABLE_LINKER__snakeproject_Debug CMakeFiles/snakeproject.dir/Source.cpp.obj | C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-audio-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-graphics-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-window-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-system-s-d.a doctest/libdoctest.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libopenal32.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbisfile.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbisenc.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbis.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libogg.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libFLAC.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libfreetype.a || doctest/libdoctest.a
+build snakeproject.exe: CXX_EXECUTABLE_LINKER__snakeproject_Debug CMakeFiles/snakeproject.dir/Snake.cpp.obj | C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-audio-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-graphics-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-window-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-system-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libopenal32.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbisfile.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbisenc.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbis.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libogg.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libFLAC.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libfreetype.a
   FLAGS = -static -g
   LINK_FLAGS = -mwindows
-  LINK_LIBRARIES = "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-audio-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-graphics-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-window-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-system-s-d.a"  doctest/libdoctest.a  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libopenal32.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbisfile.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbisenc.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbis.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libogg.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libFLAC.a"  -lwinmm  -lgdi32  -lOpenGL32  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libfreetype.a"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-audio-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-graphics-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-window-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-system-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libopenal32.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbisfile.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbisenc.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbis.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libogg.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libFLAC.a"  -lwinmm  -lgdi32  -lOpenGL32  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libfreetype.a"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\snakeproject.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = snakeproject.exe
   TARGET_IMPLIB = libsnakeproject.dll.a
   TARGET_PDB = snakeproject.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target snakeproject_test
+
+
+#############################################
+# Order-only phony target for snakeproject_test
+
+build cmake_object_order_depends_target_snakeproject_test: phony || cmake_object_order_depends_target_doctest
+
+build CMakeFiles/snakeproject_test.dir/Source.cpp.obj: CXX_COMPILER__snakeproject_test_Debug C$:/Users/dvypo/CLionProjects/snakeproject/Source.cpp || cmake_object_order_depends_target_snakeproject_test
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\snakeproject_test.dir\Source.cpp.obj.d
+  FLAGS = -static -g -std=gnu++20
+  INCLUDES = -IC:/Users/dvypo/CLionProjects/snakeproject/doctest -isystem "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/include"
+  OBJECT_DIR = CMakeFiles\snakeproject_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\snakeproject_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target snakeproject_test
+
+
+#############################################
+# Link the executable snakeproject_test.exe
+
+build snakeproject_test.exe: CXX_EXECUTABLE_LINKER__snakeproject_test_Debug CMakeFiles/snakeproject_test.dir/Source.cpp.obj | doctest/libdoctest.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-audio-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-graphics-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-window-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libsfml-system-s-d.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libopenal32.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbisfile.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbisenc.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libvorbis.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libogg.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libFLAC.a C$:/SFML/GCC$ 7.3.0$ MinGW$ (SEH)$ -$ 64-bit/SFML-2.5.1/lib/libfreetype.a || doctest/libdoctest.a
+  FLAGS = -static -g
+  LINK_LIBRARIES = doctest/libdoctest.a  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-audio-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-graphics-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-window-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libsfml-system-s-d.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libopenal32.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbisfile.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbisenc.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbis.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libogg.a"  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libFLAC.a"  -lwinmm  -lgdi32  -lOpenGL32  "C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libfreetype.a"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\snakeproject_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = snakeproject_test.exe
+  TARGET_IMPLIB = libsnakeproject_test.dll.a
+  TARGET_PDB = snakeproject_test.exe.dbg
 
 
 #############################################
@@ -192,6 +227,8 @@ build libdoctest.a: phony doctest/libdoctest.a
 
 build snakeproject: phony snakeproject.exe
 
+build snakeproject_test: phony snakeproject_test.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -200,7 +237,7 @@ build snakeproject: phony snakeproject.exe
 #############################################
 # Folder: C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug
 
-build all: phony snakeproject.exe doctest/all
+build all: phony snakeproject.exe snakeproject_test.exe doctest/all
 
 # =============================================================================
 
