@@ -26,7 +26,6 @@ int score = 0;
 
 bool game_paused = false;
 bool game_over = false;
-int mode = 0;
 
 
 sf::Texture snake_picture;
@@ -477,16 +476,10 @@ auto game()
     }
     return 0;
 }
-int test();
+
 int main()
 {
     setlocale(LC_ALL, "ru");
-    if (mode == 0)
-    {
-        game();
-    }
-    else
-    {
-        test();
-    }
+
+    game();
 }
