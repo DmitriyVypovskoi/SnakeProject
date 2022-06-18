@@ -14,4 +14,7 @@ add_executable(snakeproject WIN32 Snake.cpp Source.cpp)
 
 target_link_libraries(snakeproject PUBLIC default sfml-audio sfml-graphics sfml-window sfml-system)
 enable_testing()
-add_subdirectory(external/doctest)
+
+add_subdirectory(doctest)
+
+target_link_libraries(snakeproject PUBLIC doctest)
