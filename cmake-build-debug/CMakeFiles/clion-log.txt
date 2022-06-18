@@ -1,5 +1,9 @@
 "C:\Program Files\JetBrains\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.1.2/bin/ninja/win/ninja.exe" "-DSFML_DIR=C:\SFML\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.5.1\lib\cmake\SFML" -G Ninja -S C:\Users\dvypo\CLionProjects\snakeproject -B C:\Users\dvypo\CLionProjects\snakeproject\cmake-build-debug
 -- Found SFML 2.5.1 in C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/cmake/SFML
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug
+CMake Error at CMakeLists.txt:17 (add_subdirectory):
+  add_subdirectory given source "external/doctest" which is not an existing
+  directory.
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/CMakeFiles/CMakeOutput.log".
