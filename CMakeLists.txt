@@ -10,11 +10,14 @@ find_package(SFML 2.5 REQUIRED graphics network audio window system)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
 
-add_executable(snakeproject WIN32 Snake.cpp Source.cpp)
-
+add_executable(WIN32 Snake.cpp)
 target_link_libraries(snakeproject PUBLIC default sfml-audio sfml-graphics sfml-window sfml-system)
-enable_testing()
+
 
 add_subdirectory(doctest)
+enable_testing()
 
-target_link_libraries(snakeproject PUBLIC doctest)
+add_executable(snakeproject WIN32 Snake.h Source.cpp)
+
+target_link_libraries(snakeproject PUBLIC doctest sfml-audio sfml-graphics sfml-window sfml-system doctest::doctest)
+

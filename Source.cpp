@@ -1,6 +1,5 @@
 #include <doctest.h>
 #include <vector>
-#include <string>
 
 const int field_cell_type_none = 0;
 const int field_cell_type_apple = -1;
@@ -16,7 +15,6 @@ const int cell_size = 32;
 const int window_width = field_size_x * cell_size;
 const int window_height = field_size_y * cell_size;
 
-using namespace std;
 
 // Игровая функция по выбору случайной пустой клетки
 int get_random_empty_cell(int field[field_size_x][field_size_y])
@@ -157,7 +155,6 @@ auto movement(int snake_length, int snake_direction, int snake_position_y, int s
     field[snake_position_x][snake_position_y] = snake_length;
 }
 
-
 TEST_CASE("Testing apple placement")
 {
     int field[field_size_x][field_size_y];
@@ -190,7 +187,7 @@ TEST_CASE("Testing apple placement")
 TEST_CASE("Testing field eraser")
 {
     int field[field_size_x][field_size_y];
-    vector <int> objects = { field_cell_type_none, field_cell_type_apple, field_cell_type_wall };
+    std::vector <int> objects = { field_cell_type_none, field_cell_type_apple, field_cell_type_wall };
     for (int i = 0; i < field_size_x; i++)
     {
         for (int j = 0; j < field_size_y; j++)

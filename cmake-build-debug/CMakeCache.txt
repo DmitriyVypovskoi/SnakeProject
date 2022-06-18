@@ -276,13 +276,13 @@ VorbisFile_LIB:FILEPATH=C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/li
 Vorbis_LIB:FILEPATH=C:/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/libvorbis.a
 
 //Value Computed by CMake
-doctest_BINARY_DIR:STATIC=C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/external/doctest
+doctest_BINARY_DIR:STATIC=C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug/doctest
 
 //Value Computed by CMake
 doctest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-doctest_SOURCE_DIR:STATIC=C:/Users/dvypo/CLionProjects/snakeproject/external/doctest
+doctest_SOURCE_DIR:STATIC=C:/Users/dvypo/CLionProjects/snakeproject/doctest
 
 //Value Computed by CMake
 snakeproject_BINARY_DIR:STATIC=C:/Users/dvypo/CLionProjects/snakeproject/cmake-build-debug

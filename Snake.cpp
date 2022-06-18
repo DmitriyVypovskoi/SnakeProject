@@ -477,6 +477,7 @@ auto game()
     return 0;
 }
 
+
 int main()
 {
     setlocale(LC_ALL, "ru");
