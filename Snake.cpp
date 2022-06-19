@@ -38,7 +38,7 @@ auto game()
                 }
                 else {
                      /* Взаимствование */
-                    switch (event.key.code) {                 /* Взаимствование */
+                    switch (event.key.code) {/* Взаимствование */
                         case sf::Keyboard::Up:
                             new_direction = snake_direction_up;
                             break;

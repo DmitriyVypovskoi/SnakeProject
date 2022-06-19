@@ -56,8 +56,8 @@ void Game::init_game()
 }
 
 /**
- *
- *
+ * Method get_random_empty_cell: finds
+ * an empty cell to add an apple to
  */
 int Game::get_random_empty_cell()
 {
@@ -130,7 +130,6 @@ void Game::clear_field()
  * snake_head.getLocalBounds() - retrieves text dimensions height or width
  * std::to_string - turns a value into a string
  * window.draw() - draws the desired images in the window
- * @param window a window a render on
  */
 void Game::draw_field()
 {
@@ -195,7 +194,8 @@ void Game::draw_field()
 }
 
 /**
- * Method increaseSnake - increases the length of the snake by 1.
+ * Method increaseSnake - increases the
+ * length of the snake by 1.
  */
 void Game::increaseSnake()
 {
@@ -210,7 +210,8 @@ void Game::increaseSnake()
 
 /**
  * Method movement - responsible for the movement of the snake
- * Passage through the wall is carried out using: Passage through the wall is carried out by:
+ * Passage through the wall is carried out using: Passage
+ * through the wall is carried out by:
  * zeroing the coordinates or setting the largest coordinate.
  * sound_ate_apple.play - plays sound when eating an apple.
  */
