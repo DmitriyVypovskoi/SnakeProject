@@ -1,5 +1,9 @@
 #include "Source.h"
 
+/**
+ *Method init_game: contains the necessary
+ * files to run the game
+ */
 void Game::init_game()
 {
     std::srand(time(NULL));
@@ -53,7 +57,7 @@ void Game::init_game()
 
 /**
  *
- * @return
+ *
  */
 int Game::get_random_empty_cell()
 {
@@ -80,8 +84,8 @@ int Game::get_random_empty_cell()
     return -1;
 }
 /**
- * @param applePosition
- * @return
+ * Method apple_add assigns a value to the cell: field_cell_type_apple assigns
+ * a value to the cell: for future rendering of an apple on the playing field
  */
 void Game::apple_add()
 {
@@ -92,8 +96,8 @@ void Game::apple_add()
 }
 
 /**
- * Method clear_field
- * @return
+ * Method clear_field: clears the
+ * field and prepares it for rendering.
  */
 void Game::clear_field()
 {
@@ -125,6 +129,7 @@ void Game::clear_field()
  * sf::Color - sets the text color
  * snake_head.getLocalBounds() - retrieves text dimensions height or width
  * std::to_string - turns a value into a string
+ * window.draw() - draws the desired images in the window
  * @param window a window a render on
  */
 void Game::draw_field()
@@ -190,8 +195,7 @@ void Game::draw_field()
 }
 
 /**
- * Method increaseSnake - increases the snake
- * @return
+ * Method increaseSnake - increases the length of the snake by 1.
  */
 void Game::increaseSnake()
 {
@@ -272,8 +276,8 @@ void Game::movement() {
         field[snake_position_x][snake_position_y] = snake_length;
     }
 }
-bool Game:: isGamePaused()
+bool Game::isGamePaused()
 {
-    return paused;
+    return game_paused;
 }
 

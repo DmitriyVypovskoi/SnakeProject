@@ -1,14 +1,9 @@
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-#include <cstdlib>
-#include <string>
-#include <iostream>
 #include "snake_test/Source.cpp"
 
 
 /**
- * std::vector<int> -
- *
+ * Method game: collects all the functions and
+ * launches the game and it implements snake control
  */
 auto game()
 {
@@ -91,12 +86,9 @@ auto game()
 
                     game.snake_direction = new_direction;
         
-         if (not game.isGamePaused) {
+         if (not game.isGamePaused()) {
                game.movement();
           }
-
-
-
 
         window.clear(sf::Color(150, 212, 140));
 
@@ -116,7 +108,9 @@ auto game()
     return 0;
 }
 
-
+/**
+ * Method main - is the main function of the program.
+ */
 int main()
 {
     setlocale(LC_ALL, "ru");
