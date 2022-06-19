@@ -20,6 +20,7 @@ auto game()
     game.clear_field();
 
     while (window.isOpen()) {
+        int new_direction = game.snake_direction;
         sf::Event event;
 
         while (window.pollEvent(event)) {
@@ -41,7 +42,7 @@ auto game()
 
                 }
                 else {
-                    int new_direction = game.snake_direction; /* Взаимствование */
+                     /* Взаимствование */
                     switch (event.key.code) {                 /* Взаимствование */
                         case sf::Keyboard::Up:
                             new_direction = snake_direction_up;
@@ -86,12 +87,12 @@ auto game()
 
 
                     game.snake_direction = new_direction;
-                    if (!game.game_paused) {
-                            game.movement();
-                     }
                 }
             }
         }
+         if (!game.game_paused) {
+               game.movement();
+          }
 
 
 
