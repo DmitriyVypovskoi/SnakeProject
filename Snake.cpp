@@ -77,7 +77,10 @@ auto game()
                             game.sound_snake_dead_from_wall.play();
                             break;
                     }
-                    if (new_direction == snake_direction_up and game.snake_direction == snake_direction_down or
+                }
+            }
+        }
+        if (new_direction == snake_direction_up and game.snake_direction == snake_direction_down or
                                                                 new_direction == snake_direction_down and game.snake_direction == snake_direction_up or
                                                                                                           new_direction == snake_direction_left and game.snake_direction == snake_direction_right or
                                                                                                                                                     new_direction == snake_direction_right and game.snake_direction == snake_direction_left)
@@ -87,9 +90,7 @@ auto game()
 
 
                     game.snake_direction = new_direction;
-                }
-            }
-        }
+        
          if (!game.game_paused) {
                game.movement();
           }
