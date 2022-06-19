@@ -28,7 +28,7 @@ auto game()
                 window.close();
 
             if (event.type == sf::Event::KeyPressed) {
-                if (game.game_paused) {
+                if (game.isGamePaused()) {
                     switch (event.key.code) {
                         case sf::Keyboard::Escape:
                             game.game_paused = false;
@@ -91,7 +91,7 @@ auto game()
 
                     game.snake_direction = new_direction;
         
-         if (!game.game_paused) {
+         if (not game.isGamePaused) {
                game.movement();
           }
 
