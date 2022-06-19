@@ -127,10 +127,8 @@ void Game::clear_field()
  * std::to_string - turns a value into a string
  * @param window a window a render on
  */
-
-void Game::draw_field(sf::RenderWindow& window)
+void Game::draw_field()
 {
-
     for (int i = 0; i < field_size_x; i++) {
         for (int j = 0; j < field_size_y; j++) {
             switch (field[i][j]) {

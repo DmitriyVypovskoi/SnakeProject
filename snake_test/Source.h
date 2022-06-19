@@ -16,6 +16,7 @@ const int field_size_y = 25;
 const int cell_size = 32;
 const int window_width = field_size_x * cell_size;
 const int window_height = field_size_y * cell_size;
+sf::RenderWindow window(sf::VideoMode(window_width, window_height), "Snake", sf::Style::Close);
 
 struct Game
 {
@@ -25,6 +26,7 @@ struct Game
     int snake_length = 4;
     int snake_direction = snake_direction_right;
     int score = 0;
+
 
     bool game_paused = false;
     bool game_over = false;
@@ -69,7 +71,7 @@ struct Game
     int get_random_empty_cell();
     void apple_add();
     void clear_field();
-    void draw_field();
     void increaseSnake();
     void movement();
+    void draw_field();
 };

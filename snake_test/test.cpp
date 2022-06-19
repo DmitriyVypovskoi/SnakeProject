@@ -1,5 +1,6 @@
 #include "Source.cpp"
-#include "doctest.h"
+#include <doctest.h>
+
 TEST_CASE("Testing apple placement")
 {
     Game game;
@@ -27,7 +28,7 @@ TEST_CASE("Testing apple placement")
             }
         }
     }
-    CHECK(flag);
+            CHECK(flag);
 }
 
 TEST_CASE("Testing field eraser")
@@ -53,7 +54,7 @@ TEST_CASE("Testing field eraser")
             }
         }
     }
-    CHECK(apple_count == 1);
+            CHECK(apple_count == 1);
 }
 
 TEST_CASE("Testing snake length")
@@ -72,7 +73,7 @@ TEST_CASE("Testing snake length")
     game.field[0][4] = 4;
     game.increaseSnake();
     game.movement();
-    CHECK(game.field[0][1]>0);
+            CHECK(game.field[0][1]>0);
 }
 
 TEST_CASE("Testing basic game mechs")
@@ -92,16 +93,20 @@ TEST_CASE("Testing basic game mechs")
     }
     game.field[0][5] = field_cell_type_apple;
     game.field[0][6] = field_cell_type_wall;
+    game.snake_direction = snake_direction_down;
+    game.snake_position_x = 0;
+    game.snake_position_y = 4;
     game.movement();
     if (game.field[0][5] <= 0)
     {
         passed = false;
     }
     game.movement();
-    if (game.field[0][2] > 0)
+    if (not game.game_over)
     {
         passed = false;
     }
+    game.game_over = false;
     game.field[2][0] = 7;
     game.field[3][0] = 6;
     game.field[3][1] = 5;
@@ -109,12 +114,15 @@ TEST_CASE("Testing basic game mechs")
     game.field[2][2] = 3;
     game.field[1][2] = 2;
     game.field[0][2] = 1;
+    game.snake_direction = snake_direction_down;
+    game.snake_position_x = 2;
+    game.snake_position_y = 0;
     game.movement();
     game.movement();
-    if (game.field[2][0] > 0) {
+    if (not game.game_over) {
         passed = false;
     }
-    CHECK(passed);
+            CHECK(passed);
 }
 
 TEST_CASE("Testing snake movement")
@@ -132,10 +140,15 @@ TEST_CASE("Testing snake movement")
         game.field[0][j] = j + 1;
     }
     game.field[0][5] = field_cell_type_wall;
+    game.snake_direction = snake_direction_right;
+    game.snake_position_x = 0;
+    game.snake_position_y = 4;
+    game.movement();
+    game.snake_direction = snake_direction_down;
     game.movement();
     game.movement();
+    game.snake_direction = snake_direction_left;
     game.movement();
-    game.movement();
-    bool req = (game.field[0][4] > 0 and game.field[1][5] > 0 and game.field[0][6] > 0);
-    CHECK(req);
+    bool req = (game.field[1][5] > 0 and game.field[0][6] > 0);
+            CHECK(req);
 }
