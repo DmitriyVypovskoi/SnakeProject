@@ -1,7 +1,7 @@
 #include "Source.h"
 
 /**
- *Method init_game: contains the necessary
+ * Method init_game: contains the necessary
  * files to run the game
  */
 void Game::init_game()
@@ -277,6 +277,9 @@ void Game::movement() {
         field[snake_position_x][snake_position_y] = snake_length;
     }
 }
+/**
+ * Method isGamePaused: pauses the game.
+ */
 bool Game::isGamePaused()
 {
     return game_paused;
