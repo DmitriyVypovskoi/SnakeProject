@@ -272,3 +272,8 @@ void Game::movement() {
         field[snake_position_x][snake_position_y] = snake_length;
     }
 }
+bool Game:: isGamePaused()
+{
+    return paused;
+}
+
