@@ -86,15 +86,15 @@ auto game()
 
 
                     game.snake_direction = new_direction;
+                    if (!game.game_paused) {
+                            game.movement();
+                     }
                 }
             }
         }
 
 
 
-        if (!game.game_paused) {
-            game.movement();
-        }
 
         window.clear(sf::Color(150, 212, 140));
 
