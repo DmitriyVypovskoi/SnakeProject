@@ -42,7 +42,7 @@ auto game()
                 }
                 else {
                     int new_direction = game.snake_direction; /* Взаимствование */
-                    switch (event.key.code) {                                                                                      /* Взаимствование */
+                    switch (event.key.code) {                 /* Взаимствование */
                         case sf::Keyboard::Up:
                             new_direction = snake_direction_up;
                             break;

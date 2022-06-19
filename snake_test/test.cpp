@@ -152,3 +152,24 @@ TEST_CASE("Testing snake movement")
     bool req = (game.field[1][5] > 0 and game.field[0][6] > 0);
             CHECK(req);
 }
+TEST_CASE("Testing game ending")
+{
+    Game game;
+    for (int i = 0; i < field_size_x; i++)
+    {
+        for (int j = 0; j < field_size_y; j++)
+        {
+            game.field[i][j] = field_cell_type_none;
+        }
+    }
+    for (int j = 0; j < 5; j++)
+    {
+        game.field[0][j] = j + 1;
+    }
+    game.snake_direction = snake_direction_down;
+    game.snake_position_x = 0;
+    game.snake_position_y = 4;
+    game.game_over = true;
+    game.movement();
+            CHECK(game.field[0][5] <= 0);
+}
