@@ -74,4 +74,5 @@ struct Game
     void increaseSnake();
     void movement();
     void draw_field();
+    bool isGamePaused();
 };
