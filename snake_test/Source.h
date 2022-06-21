@@ -19,7 +19,7 @@ const int window_height = field_size_y * cell_size;
 sf::RenderWindow window(sf::VideoMode(window_width, window_height), "Snake", sf::Style::Close);
 
 /**
- * Game - initializes variables that are used in the game code
+ * Game - initializes variables and methods that are used in the game code
  * field[][] - a two-dimensional array storing the coordinates of the snake.
  * snake_position - the x or y coordinate of the snake.
  * snake length - stores the current length of the snake at the beginning of the game it is equal to 4.
