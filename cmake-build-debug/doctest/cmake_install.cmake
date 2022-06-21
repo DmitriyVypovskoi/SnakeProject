@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/dvypo/CLionProjects/snakeproject/doctest
+# Install script for directory: C:/Users/dvypo/CLionProjects/SnakeProject2/doctest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
