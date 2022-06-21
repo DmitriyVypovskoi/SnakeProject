@@ -22,7 +22,7 @@ sf::RenderWindow window(sf::VideoMode(window_width, window_height), "Snake", sf:
  * Game - initializes variables that are used in the game code
  * field[][] - a two-dimensional array storing the coordinates of the snake.
  * snake_position - the x or y coordinate of the snake.
- * snake length - stores the current length of the snake.
+ * snake length - stores the current length of the snake at the beginning of the game it is equal to 4.
  * score - stores the current account.
  * game paused - pauses the game.
  * game over - a variable that stores the value of losing a game.
