@@ -19,3 +19,5 @@ _deps
 *.iml
 out
 gen
+/.idea/
+/cmake-build-debug/
