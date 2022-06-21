@@ -278,7 +278,7 @@ void Game::movement() {
     }
 }
 /**
- * Method isGamePaused: pauses the game.
+ * Method isGamePaused: checks if the game is paused.
  */
 bool Game::isGamePaused()
 {
