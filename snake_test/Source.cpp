@@ -1,7 +1,7 @@
 #include "Source.h"
 
 /**
- * Method init_game: contains the necessary
+ *Method init_game: contains the necessary
  * files to run the game
  */
 void Game::init_game()
