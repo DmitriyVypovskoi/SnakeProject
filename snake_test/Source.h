@@ -18,6 +18,18 @@ const int window_width = field_size_x * cell_size;
 const int window_height = field_size_y * cell_size;
 sf::RenderWindow window(sf::VideoMode(window_width, window_height), "Snake", sf::Style::Close);
 
+/**
+ * Game - initializes variables that are used in the game code
+ * field[][] - a two-dimensional array storing the coordinates of the snake.
+ * snake_position - the x or y coordinate of the snake.
+ * snake length - stores the current length of the snake.
+ * score - stores the current account.
+ * game paused - pauses the game.
+ * game over - a variable that stores the value of losing a game.
+ * sf::Texture and sf::Sprite - allows you to initialize images in the game.
+ * sf::SoundBuffer and sf::Sound - allows you to use sounds in the game.
+ * sf::Font and sf::Text - allows you to use downloaded fonts.
+ */
 struct Game
 {
     int field[field_size_x][field_size_y];
